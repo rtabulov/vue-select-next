@@ -1,6 +1,6 @@
 {
   "name": "vue-select-next",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "files": [
     "dist"
   ],
@@ -8,6 +8,9 @@
   "exports": {
     ".": {
       "import": "./dist/VSelect.es.js"
+    },
+    "./css": {
+      "import": "./dist/style.css"
     }
   },
   "scripts": {
