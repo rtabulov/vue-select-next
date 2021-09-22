@@ -11,6 +11,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/components/Select.vue'),
       name: 'VueSelectNext',
       fileName: (format) => `VSelect.${format}.js`,
+      formats: ['es'],
     },
     rollupOptions: {
       external: ['vue'],

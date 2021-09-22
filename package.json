@@ -1,15 +1,13 @@
 {
   "name": "vue-select-next",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "files": [
     "dist"
   ],
-  "main": "./dist/VSelect.umd.js",
   "module": "./dist/VSelect.es.js",
   "exports": {
     ".": {
-      "import": "./dist/VSelect.es.js",
-      "require": "./dist/VSelect.umd.js"
+      "import": "./dist/VSelect.es.js"
     }
   },
   "scripts": {

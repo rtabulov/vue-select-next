@@ -4,9 +4,12 @@
 
 import { ref } from '@vue/reactivity';
 import { watchEffect } from '@vue/runtime-core';
-import HelloWorld from './components/HelloWorld.vue';
-import Select from './components/Select.vue';
+import VSelect from '../dist/VSelect.es';
+import Deselect from './components/Deselect.vue';
 import countries from './countryCodes';
+import '../dist/style.css';
+
+console.log(Deselect);
 
 const selected = ref(null);
 const config = ref({
@@ -18,7 +21,7 @@ watchEffect(() => console.log(selected.value));
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <Select v-bind="config" v-model="selected" />
+  <VSelect v-bind="config" v-model="selected" />
 </template>
 
 <style>
