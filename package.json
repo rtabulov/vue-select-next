@@ -15,7 +15,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "publish": "npm publish",
+    "prepublish": "yarn build"
   },
   "dependencies": {
     "vue": "3.2.x"
